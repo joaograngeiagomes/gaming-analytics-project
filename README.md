@@ -22,14 +22,14 @@ The project includes the following datasets:
 - purchases
 
 ##  Project Structure
-
+```
 gaming-project/
 ├── data/
 ├── scripts/
 │ └── generate_data.py
 ├── notebooks/
 └── README.md
-
+```
 ##
 
 
