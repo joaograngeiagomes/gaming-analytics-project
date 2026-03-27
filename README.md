@@ -23,13 +23,14 @@ The project includes the following datasets:
 
 ## Data Ingestion 
 Data ingestion is simulated using CSV files. In a production environment, this would be handled by tools like Fivetran or Airbyte connecting operational databases or APIs to Snowflake.
+Raw data is loaded into Snowflake using SQL scripts and staged CSV files that were uploaded using an internal stage via the Snowflake UI.
 
 ##  Project Structure
 ```
 gaming-project/
 ├── data/
 ├── scripts/
-│ └── generate_data.py
+├── sql/
 ├── notebooks/
 └── README.md
 ```
