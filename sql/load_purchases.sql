@@ -1,0 +1,11 @@
+USE DATABASE GAMING_DB;
+USE WAREHOUSE GAMING_ANALYTICS_WH;
+
+
+COPY INTO purchases
+FROM @gaming_stage/purchases.csv
+FILE_FORMAT = (TYPE = 'CSV' SKIP_HEADER = 1);
+
+
+SELECT * FROM purchases LIMIT 10;
+SELECT COUNT(*) FROM purchases;

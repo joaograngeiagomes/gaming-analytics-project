@@ -21,6 +21,9 @@ The project includes the following datasets:
 - events
 - purchases
 
+## Data Ingestion 
+Data ingestion is simulated using CSV files. In a production environment, this would be handled by tools like Fivetran or Airbyte connecting operational databases or APIs to Snowflake.
+
 ##  Project Structure
 ```
 gaming-project/
