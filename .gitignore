@@ -1,6 +1,6 @@
+dbt_venv/
 venv/
-data/
 __pycache__/
 *.pyc
-.env
-*.csv
+logs/
+target/
