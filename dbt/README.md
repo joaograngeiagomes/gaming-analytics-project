@@ -3,8 +3,8 @@
 This folder contains the transformation layer of the project, built using dbt.
 
 ## Tech Stack
-dbt
-Snowflake
+- dbt
+- Snowflake
 
 
 ## Overview
