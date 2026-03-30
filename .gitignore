@@ -1,6 +1,22 @@
-dbt_venv/
+# Python virtual environments
 venv/
+dbt_venv/
+
+# Python cache
 __pycache__/
 *.pyc
-logs/
+
+# dbt artifacts
 target/
+dbt_packages/
+logs/
+
+# Environment variables
+.env
+
+# OS / editor
+.DS_Store
+.vscode/
+
+# Data files (opcional - depende se queres mostrar ou não)
+# data/*.csv
