@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: raw
+    database: GAMING_DB
+    schema: RAW
+    tables:
+      - name: users
+      - name: sessions
+      - name: events
+      - name: purchases
