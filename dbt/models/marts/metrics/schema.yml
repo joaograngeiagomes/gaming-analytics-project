@@ -1,0 +1,55 @@
+version: 2
+
+models:
+
+  - name: dau
+    description: "Daily Active Users (DAU), representing the number of unique users active per day."
+    columns:
+      - name: event_date
+        description: "Date of activity"
+      - name: dau
+        description: "Number of distinct active users on that day"
+
+  - name: revenue
+    description: "Daily revenue aggregated from purchase transactions."
+    columns:
+      - name: purchase_date
+        description: "Date of purchase"
+      - name: revenue
+        description: "Total revenue generated on that day"
+
+  - name: retention
+    description: "Cohort retention table showing user activity over time since first activity."
+    columns:
+      - name: first_activity_date
+        description: "Cohort start date (first activity date)"
+      - name: days_since_signup
+        description: "Number of days since the user's first activity"
+      - name: active_users
+        description: "Number of active users for the cohort on that day"
+      - name: cohort_size
+        description: "Total number of users in the cohort"
+      - name: retention_rate
+        description: "Percentage of users retained (active_users / cohort_size)"
+
+  - name: retention_pivot
+    description: "Pivoted cohort retention table showing retention rates across the first 7 days."
+    columns:
+      - name: first_activity_date
+        description: "Cohort start date"
+      - name: day_0
+        description: "Retention rate on day 0 (always 100%)"
+      - name: day_1
+        description: "Retention rate on day 1"
+      - name: day_2
+        description: "Retention rate on day 2"
+      - name: day_3
+        description: "Retention rate on day 3"
+      - name: day_4
+        description: "Retention rate on day 4"
+      - name: day_5
+        description: "Retention rate on day 5"
+      - name: day_6
+        description: "Retention rate on day 6"
+      - name: day_7
+        description: "Retention rate on day 7"

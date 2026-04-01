@@ -1,0 +1,39 @@
+version: 2
+
+models:
+
+  - name: fct_events
+    description: "Fact table containing all user interaction events at event-level granularity."
+    columns:
+      - name: event_id
+        description: "Unique identifier for each event"
+      - name: user_id
+        description: "Unique identifier of the user who performed the event"
+      - name: event_type
+        description: "Type of event (e.g. login, level_start, purchase)"
+      - name: event_timestamp
+        description: "Timestamp when the event occurred"
+
+  - name: fct_purchases
+    description: "Fact table containing all purchase transactions."
+    columns:
+      - name: purchase_id
+        description: "Unique identifier for each purchase"
+      - name: user_id
+        description: "User who made the purchase"
+      - name: amount
+        description: "Monetary value of the purchase"
+      - name: purchase_timestamp
+        description: "Timestamp when the purchase occurred"
+
+  - name: dim_users
+    description: "Dimension table containing user attributes and acquisition information."
+    columns:
+      - name: user_id
+        description: "Unique identifier of the user"
+      - name: signup_date
+        description: "Date when the user signed up"
+      - name: country
+        description: "Country of the user"
+      - name: acquisition_channel
+        description: "Marketing channel through which the user was acquired"
