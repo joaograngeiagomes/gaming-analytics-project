@@ -181,6 +181,13 @@ dbt test
 
 ---
 
+## 📊 Dashboard
+
+Built with **Metabase** (self-hosted via Docker) connected directly to Snowflake.
+
+![Gaming Analytics Dashboard](assets/dashboard.png)
+
+
 ## 🚀 How to Run
 
 ### Prerequisites

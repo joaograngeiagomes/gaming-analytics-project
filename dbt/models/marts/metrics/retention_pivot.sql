@@ -1,5 +1,6 @@
 select
-    first_activity_date,
+    CAST(first_activity_date AS DATE) AS first_activity_date,
+
 
     max(case when days_since_signup = 0 then retention_rate end) as day_0,
     max(case when days_since_signup = 1 then retention_rate end) as day_1,
