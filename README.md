@@ -81,6 +81,8 @@ flowchart LR
 | **Python + pandas** | Synthetic data generation |
 | **SQL** | Manual scripts for Snowflake setup and data loading |
 | **GitHub** | Version control |
+| **Metabase** | Data visualization & dashboarding |
+| **Docker** | Metabase self-hosted container |
 
 ---
 
