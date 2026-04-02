@@ -92,7 +92,6 @@ dbt docs serve
 
 ## 📈 Future Improvements
 
-* Add data quality tests (dbt tests)
 * Build a dashboard (Power BI / Tableau)
 * Add incremental models for scalability
 * Introduce surrogate keys and SCD handling
